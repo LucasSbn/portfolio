@@ -1,0 +1,96 @@
+.h1Skills{
+    text-align: center;
+    color: var(--color-white);
+}
+
+.linguagens{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 4rem auto;
+
+    gap: 2rem;
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+.linguagens div{ 
+    background-color: var(--color-yellow);
+    box-shadow: 0 0 8px var(--color-white);
+    color: var(--color-dark);
+    font-size: 3rem;
+    transition: .3s all;
+
+    
+    width: 100px;
+    height: 100px;
+    
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    user-select: none;
+}  
+
+.linguagens div h3{
+    font-size: .8rem;
+} 
+
+.linguagens .html{
+    border-bottom: 3px solid #e36c26;
+}
+
+.linguagens .css{
+    border-bottom: 3px solid #264de4;
+}
+
+.linguagens .firebase{
+    border-bottom: 3px solid #F6820D;
+}
+
+.linguagens .javascript{
+    border-bottom: 3px solid yellow;
+}
+
+.linguagens .node{
+    border-bottom: 3px solid #6cc24a;
+}
+
+.linguagens .python{
+    border-bottom: 3px solid #4584b6;
+}
+
+.linguagens .python{
+    border-bottom: 3px solid #4584b6;
+}
+
+.linguagens .flask{
+    border-bottom: 3px solid black;
+}
+
+.linguagens .pandas{
+    border-bottom: 3px solid #1A237E;
+}
+
+.linguagens .django{
+    border-bottom: 3px solid #092e20;
+}
+
+.linguagens .mysql{
+    border-bottom: 3px solid #00758f;
+}
+
+.linguagens .github{
+    border-bottom: 3px solid #7a868c;
+}
+
+.linguagens .git{
+    border-bottom: 3px solid #f14e32;
+}
+
+
+.linguagens .express{
+    border-bottom: 3px solid #7a868c;
+}

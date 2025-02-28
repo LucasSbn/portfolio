@@ -1,0 +1,136 @@
+.titlePrinc{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titleName{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.titleCV{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.titleCV a{
+    color: black;
+    letter-spacing: .5px;
+    background-color: var(--color-yellow);
+    font-size: 1.1rem;
+    padding: 1rem;
+    flex-direction: row;
+    border-radius: 50px;
+    transition: all .4s;
+}
+
+.titleCV a:hover{
+    background-color: #ffd269ba;
+}
+
+.divImg img{
+    border: 2.9px solid var(--color-yellow);
+    height: 300px;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+}
+
+/* repositorios */
+
+.projects{
+    color: var(--color-white);
+    margin-top: 5rem;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.projects .aboutProjects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.projects .aboutProjects p{
+    border-radius: 1px;
+    text-align: center;
+    
+    width: 280px;
+    margin-bottom: 1.5rem;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+
+.projects .aboutProjects span{
+    max-width: 700px;
+    letter-spacing: .7px;
+    text-align: justify;
+}
+
+.reposAbout{
+    padding-bottom: 5rem;
+    color: var(--color-black);
+    
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    max-width: 1000px;
+}
+
+.reposAbout .reposAbout_div{
+    background-color: var(--color-yellow);
+    border-radius: 2px;
+    padding: 1rem;
+    width: 300px;
+    
+    color: black;
+}
+
+.reposAbout .reposAbout_div .repoAbout{
+    margin-bottom: 1.5rem;
+}
+
+.reposAbout .reposAbout_div .languageUsage{
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+    gap: .5rem;
+}
+
+.reposAbout .reposAbout_div .divLinks .repoPage, .repoGit{
+    color: black;
+    transition: .4s all;
+}
+
+.reposAbout .reposAbout_div .divLinks .repoPage:hover, .repoGit:hover{
+    color: red;
+}
+
+.reposAbout .reposAbout_div .divLinks{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin-top: .7rem;
+}

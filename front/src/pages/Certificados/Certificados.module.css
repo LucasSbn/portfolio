@@ -1,0 +1,48 @@
+.h1Princ{ 
+    text-align: center;
+    color: var(--color-white);
+    margin-top: 4rem; /* Remova o margin-top */
+}
+
+.divPrincDivs {
+    margin-top: 5rem; /* Remova o margin-top */
+    margin-bottom: 7rem; /* Remova o margin-top */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    height: 70vh; /* Ocupa toda a altura da viewport */
+    box-sizing: border-box; /* Garante um comportamento esperado do layout */
+    gap: 2rem; /* Espaço entre as divs internas */
+}
+
+.divPrincDivs .DivBox {
+    background-color: var(--color-yellow);
+    width: 400px;
+    padding: .5rem;
+    height: 220px;
+    text-align: center; 
+    border-radius: 4px; 
+}
+
+.divPrincDivs .DivBox h2 {
+    margin-top: .5rem
+}
+
+.divHrsIcons{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.divHrsIcons p{
+    font-size: 1.2rem;
+}
+
+.divHrsIcons div{
+    font-size: 1.7rem;
+    display: flex;
+    gap: 1rem;
+}

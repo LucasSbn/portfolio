@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --color-white: #eeeeee;
+    --color-black: #2a2e34;
+    --color-yellow: #FFD369;
+}
+
+body{
+    background-color: var(--color-black);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-yellow); 
+    border-radius: 2px;
+}

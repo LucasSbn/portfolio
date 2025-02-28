@@ -1,0 +1,34 @@
+.divPrincNavbar{
+    display: flex;
+    padding: .7rem 2rem;
+    margin: 2rem auto;
+    max-width: 95%;
+    border-radius: 10px;
+    background-color: var(--color-yellow);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linksContainer{
+  display: flex;
+  gap: 1rem;
+}
+
+.linksContainer a{
+  font-size: 1.03rem;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .linkAtivo {
+    background-color: black; /* Cor para o link ativo */
+    color: white;
+    padding: .5rem;
+    border-radius: 2px;
+  }
