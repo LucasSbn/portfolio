@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar"
-import PDF from "../../../Assets/curriculoLC.docx.pdf";
+import PDF from "../../../Assets/CURRICULO.pdf";
 import IMG from "../../../Assets/imgLC.png";
 import { Link } from "react-router-dom";
 
