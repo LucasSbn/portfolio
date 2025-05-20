@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,21 +7,41 @@
     text-decoration: none;
 }
 
-:root{
+:root {
     --color-white: #eeeeee;
     --color-black: #2a2e34;
     --color-yellow: #FFD369;
+
+    /* fontes e tamanho base */
+    --font-size-base: 16px;
+    --font-family: 'Inter', sans-serif;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+    font-size: var(--font-size-base);
+}
+
+body {
     background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    line-height: 1.6;
 }
 
+/* Scrollbar personalizada */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-yellow); 
-    border-radius: 2px;
+    background: var(--color-yellow);
+    border-radius: 5px;
+}
+
+/* Responsividade global */
+@media (max-width: 600px) {
+    html {
+        font-size: 15px;
+    }
 }

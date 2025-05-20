@@ -1,21 +1,23 @@
-.divPrincNavbar{
+.divPrincNavbar {
     display: flex;
-    padding: .7rem 2rem;
+    padding: 0.7rem 2rem;
     margin: 2rem auto;
     max-width: 95%;
     border-radius: 10px;
     background-color: var(--color-yellow);
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* permite quebra em telas pequenas */
 }
 
-.linksContainer{
-  display: flex;
-  gap: 1rem;
+.linksContainer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* quebra os links para próxima linha se necessário */
 }
 
-.linksContainer a{
-  font-size: 1.03rem;
+.linksContainer a {
+    font-size: 1.03rem;
 }
 
 .link {
@@ -24,11 +26,31 @@
     padding: 8px 12px;
     border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .linkAtivo {
-    background-color: black; /* Cor para o link ativo */
+}
+
+.linkAtivo {
+    background-color: black;
     color: white;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 2px;
-  }
+}
+
+/* MEDIA QUERY PARA TELAS MENORES */
+@media (max-width: 768px) {
+    .divPrincNavbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .linksContainer {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .linksContainer a {
+        font-size: 1rem;
+    }
+}

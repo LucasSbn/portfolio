@@ -1,39 +1,47 @@
-.titlePrinc{
+.titlePrinc {
     margin-top: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.titleName{
-    color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.titleCV{
-    margin-top: 2rem;
-    display: flex;
+    flex-wrap: wrap; /* ajuda para quando a tela é estreita */
     gap: 2rem;
 }
 
-.titleCV a{
+.titleName {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.titleCV {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titleCV a {
     color: black;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     background-color: var(--color-yellow);
     font-size: 1.1rem;
     padding: 1rem;
-    flex-direction: row;
     border-radius: 50px;
-    transition: all .4s;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.titleCV a:hover{
+.titleCV a:hover {
     background-color: #ffd269ba;
 }
 
-.divImg img{
+.divImg img {
     border: 2.9px solid var(--color-yellow);
     height: 300px;
     border-radius: 50%;
@@ -41,96 +49,134 @@
 }
 
 @keyframes float {
-    0%, 100%{
+    0%, 100% {
         transform: translateY(0);
     }
-
-    50%{
+    50% {
         transform: translateY(-30px);
     }
 }
 
-/* repositorios */
-
-.projects{
+/* Projetos */
+.projects {
     color: var(--color-white);
     margin-top: 5rem;
-    height: 100vh;
-    
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    padding: 0 1rem;
 }
 
-.projects .aboutProjects{
+.projects .aboutProjects {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
-
-.projects .aboutProjects p{
+.projects .aboutProjects p {
     border-radius: 1px;
-    text-align: center;
-    
-    width: 280px;
+    width: 100%;
+    max-width: 300px;
     margin-bottom: 1.5rem;
-    font-size: 2.5em;
+    font-size: 2rem;
     letter-spacing: 3px;
 }
 
-.projects .aboutProjects span{
+.projects .aboutProjects span {
     max-width: 700px;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
     text-align: justify;
+    padding: 0 1rem;
 }
 
-.reposAbout{
+.reposAbout {
     padding-bottom: 5rem;
     color: var(--color-black);
-    
     margin-top: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
-    
+    gap: 1.5rem;
     max-width: 1000px;
 }
 
-.reposAbout .reposAbout_div{
+.reposAbout .reposAbout_div {
     background-color: var(--color-yellow);
     border-radius: 2px;
     padding: 1rem;
     width: 300px;
-    
     color: black;
 }
 
-.reposAbout .reposAbout_div .repoAbout{
+.reposAbout .reposAbout_div .repoAbout {
     margin-bottom: 1.5rem;
 }
 
-.reposAbout .reposAbout_div .languageUsage{
+.reposAbout .reposAbout_div .languageUsage {
     display: flex;
     align-items: center;
-    margin: .5rem 0;
-    gap: .5rem;
+    margin: 0.5rem 0;
+    gap: 0.5rem;
 }
 
-.reposAbout .reposAbout_div .divLinks .repoPage, .repoGit{
-    color: black;
-    transition: .4s all;
-}
-
-.reposAbout .reposAbout_div .divLinks .repoPage:hover, .repoGit:hover{
-    color: red;
-}
-
-.reposAbout .reposAbout_div .divLinks{
+.reposAbout .reposAbout_div .divLinks {
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
+}
+
+.reposAbout .reposAbout_div .divLinks .repoPage,
+.repoGit {
+    color: black;
+    transition: 0.4s all;
+}
+
+.reposAbout .reposAbout_div .divLinks .repoPage:hover,
+.repoGit:hover {
+    color: red;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    .titlePrinc {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .divImg img {
+        height: 220px;
+    }
+
+    .projects .aboutProjects p {
+        font-size: 1.5rem;
+    }
+
+    .projects .aboutProjects span {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .titleCV {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .titleCV a {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .reposAbout {
+        justify-content: center;
+    }
+
+    .reposAbout .reposAbout_div {
+        width: 100%;
+        max-width: 90vw;
+    }
 }
